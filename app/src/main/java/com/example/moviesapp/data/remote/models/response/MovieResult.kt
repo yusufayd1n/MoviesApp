@@ -1,4 +1,4 @@
-package com.example.moviesapp.data.local.models.response
+package com.example.moviesapp.data.remote.models.response
 
 data class MovieResult(
     val adult: Boolean,

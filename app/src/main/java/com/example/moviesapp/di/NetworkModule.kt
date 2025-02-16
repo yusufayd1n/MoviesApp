@@ -1,7 +1,7 @@
 package com.example.moviesapp.di
 
 import com.example.moviesapp.BuildConfig
-import com.example.moviesapp.data.local.MoviesService
+import com.example.moviesapp.data.remote.MoviesService
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

@@ -1,6 +1,6 @@
-package com.example.moviesapp.data.local
+package com.example.moviesapp.data.remote
 
-import com.example.moviesapp.data.local.models.response.MovieResponse
+import com.example.moviesapp.data.remote.models.response.MovieResponse
 import retrofit2.http.GET
 
 interface MoviesService {
