@@ -17,16 +17,21 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
     }
 
     buildTypes {
+        debug {
+            buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            buildConfigField("String", "BASE_URL", "\"${project.properties["https://api.themoviedb.org/3/"]}\"")
+            buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
         }
     }
     compileOptions {
@@ -76,4 +81,6 @@ dependencies {
 
     implementation(libs.androidx.paging.runtime.ktx)
     implementation(libs.androidx.paging.compose)
+
+    implementation(libs.logging.interceptor)
 }
