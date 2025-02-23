@@ -11,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 //TODO access token will storage more secure way
 private const val ACCESS_TOKEN =
-    "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MzM5YWI1MjQxYmYwYzk1OWRkMjczZGU0N2QzMDczNSIsIm5iZiI6MTcyMzk4NDA2Mi4yMTIsInN1YiI6IjY2YzFlOGJlMjc3Y2NmOTU3ZGEyNzAxYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jl1NZFmPe9f4Rek7Px_F8Mn_2Te1bxY-j2PSjhDKS4A\n"
+    "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MzM5YWI1MjQxYmYwYzk1OWRkMjczZGU0N2QzMDczNSIsIm5iZiI6MTcyMzk4NDA2Mi4yMTIsInN1YiI6IjY2YzFlOGJlMjc3Y2NmOTU3ZGEyNzAxYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jl1NZFmPe9f4Rek7Px_F8Mn_2Te1bxY-j2PSjhDKS4A"
 
 val networkModule = module {
     single {

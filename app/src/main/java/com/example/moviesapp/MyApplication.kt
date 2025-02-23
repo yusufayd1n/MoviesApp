@@ -4,6 +4,7 @@ import android.app.Application
 import com.example.moviesapp.di.networkModule
 import com.example.moviesapp.di.repositoryModule
 import com.example.moviesapp.di.useCaseModule
+import com.example.moviesapp.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -16,7 +17,8 @@ class MyApplication : Application() {
             modules(listOf(
                 networkModule,
                 repositoryModule,
-                useCaseModule
+                useCaseModule,
+                viewModelModule
             ))
         }
     }
