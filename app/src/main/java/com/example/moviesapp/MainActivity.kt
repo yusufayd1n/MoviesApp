@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import com.example.moviesapp.ui.theme.MoviesAppTheme
 import com.example.moviesapp.ui.theme.presentation.home.HomeViewModel
+import com.example.moviesapp.ui.theme.presentation.home.MoviesHomeScreen
 import org.koin.androidx.compose.koinViewModel
 
 class MainActivity : ComponentActivity() {
@@ -16,13 +17,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MoviesAppTheme {
-                movies()
+                enableEdgeToEdge()
+                MoviesHomeScreen()
             }
         }
-    }
-
-    @Composable
-    fun movies(homeViewModel : HomeViewModel = koinViewModel()) {
-        homeViewModel.getMovies()
     }
 }
