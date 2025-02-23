@@ -1,6 +1,6 @@
 [versions]
 agp = "8.8.1"
-coilCompose = "3.1.0"
+glide-compose = "1.0.0-beta01"
 converterGson = "2.9.0"
 koinAndroidxCompose = "4.0.2"
 koinAndroidxComposeNavigation = "4.0.2"
@@ -26,7 +26,7 @@ androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref =
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
 androidx-room-paging = { module = "androidx.room:room-paging", version.ref = "roomRuntime" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
-coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilCompose" }
+glide-compose = { module = "com.github.bumptech.glide:compose", version.ref = "glide-compose" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
