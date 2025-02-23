@@ -77,10 +77,11 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.room.paging)
 
-    implementation(libs.coil.compose)
 
     implementation(libs.androidx.paging.runtime.ktx)
     implementation(libs.androidx.paging.compose)
 
     implementation(libs.logging.interceptor)
+
+    implementation (libs.glide.compose)
 }
